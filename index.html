@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <title>prestige-homes</title>
 </head>
-<body>
-    <div class="top">
+<body onload="preloader()">
+    <div class="totop">
+        <a href="#bg"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <div class="top" id="top">
         <div class="container">
             <div class="element">
                 <div class="logo">
@@ -23,14 +26,17 @@
                     </ul>
                 </div>
                 <div class="but">
-                    <i class="fa fa-moon"></i>
+                    <i class="fa fa-moon" id="contrast"></i>
                     <span><a href="">list your property</a></span>
+                </div>
+                <div id="toggle" onclick="tog()">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
         </div>
     </div>
     <!-- bg section -->
-    <div class="bg">
+    <div class="bg" id="bg">
         <div class="overlay"></div>
         <div class="text">
             <div class="container">
@@ -216,7 +222,7 @@
         </div>
       </div>
       <!-- offer  -->
-       <div class="offers">
+    <div class="offers">
         <div class="container">
             <div class="heading">
                 <h1>why choose prestige homes</h1>
@@ -245,7 +251,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
         <div class="agents">
             <div class="container">
                 <div class="heading">
@@ -265,10 +271,50 @@
                             </div>
                         </div>
                         <div id="contact">
-                            <a href="">
+                            <a href="tel:+2348144349382">
                                 <i class="fa fa-phone"></i>call
                             </a>
-                            <a href="">
+                            <a href="mailto:jaykelly997@gmail.com">
+                                <i class="fa fa-envelope"></i>email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/partner.jpg" alt="">
+                        <div class="profile">
+                            <h3>sarah mitchell</h3>
+                            <p>senior partner</p>
+                            <span>$500M+ in sales</span>
+                            <div id="but">
+                                <span>luxury properties</span>
+                                <span>penthouses</span>
+                            </div>
+                        </div>
+                        <div id="contact">
+                            <a href="tel:+2348144349382">
+                                <i class="fa fa-phone"></i>call
+                            </a>
+                            <a href="mailto:jaykelly997@gmail.com">
+                                <i class="fa fa-envelope"></i>email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/partner.jpg" alt="">
+                        <div class="profile">
+                            <h3>sarah mitchell</h3>
+                            <p>senior partner</p>
+                            <span>$500M+ in sales</span>
+                            <div id="but">
+                                <span>luxury properties</span>
+                                <span>penthouses</span>
+                            </div>
+                        </div>
+                        <div id="contact">
+                            <a href="tel:+2348144349382">
+                                <i class="fa fa-phone"></i>call
+                            </a>
+                            <a href="mailto:jaykelly997@gmail.com">
                                 <i class="fa fa-envelope"></i>email
                             </a>
                         </div>
@@ -276,7 +322,63 @@
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="container">
+                <div class="element">
+                    <div class="card">
+                        <div class="logo"><img src="images/logo (1).svg" alt=""></div>
+                        <p>Find your dream home</p>
+                        <ul id="social">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>company</h2>
+                        <ul>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>contacts</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>about</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>agents</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>properties</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>get started</h2>
+                        <ul>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>buy</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>rent</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>sell</a></li>
+                            <li><a href=""><i class="fa fa-arrow-right"></i>lease</a></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>news letter</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur quod facere hic optio consequatur, in, sint et dolorem atque magnam tempore veniam mollitia sit quam perspiciatis nostrum quo neque?</p>
+                        <form action="" method="post">
+                            <input type="text" placeholder="enter your email address">
+                            <button>submit</button>
+                        </form>
+                    </div>
 
-    
+                </div>
+            </div>
+        </div>
+        <!-- preloader -->
+         <div id="preloader">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>   
+            </div>
+         </div>
+
+
+    <script src="js/script.js"></script>
+
+        
 </body>
 </html>
